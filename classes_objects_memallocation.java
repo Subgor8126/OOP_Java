@@ -65,6 +65,12 @@ class Student {
     // of 14, then if we try to access student1.rollno, it will
     // directly evaluate to 14, without us needing to explicitly
     // define rollno to be 14.
+    // These variables defined for the object, by the class, inside
+    // the object, are called instance variables. These instance
+    // variables are defined in the class, and copies of those instance
+    // variables are provided to each object instantiated from that class.
+    // Only those variables are instance variables which are defined inside
+    // the class, but on the outside of any method in the class.
 
     // If we try to print the values of an object, which has not been
     // assigned any values, then it will just point to whatever value
@@ -76,6 +82,23 @@ class Student {
     // rollno, name and marks variables are declared as int, String and float
     // in the Student class definition, and non-initialized int, String and float variables
     // point towards 0, null and 0.0 respectively.
+    // When we actually assign some values to that object, then it will have values.
+    // For example,
+    // student1.rollno = 10;
+    // student1.name = "Generic Name";
+    // student1.marks = 78.4f;
+    // Now, the student1 object actually has some values.
+    // We can also provide default values to the instance variables from the class definition itself.
+    // For example,
+    // int rollno = 10;
+    // String name = "Generic Name";
+    // float marks = 78.4;
+    // So if we have provided values to the reference variables from the class, those values
+    // are assigned to the instance variables, else default values are assigned.
+    // But Java is a statically typed language. Hence, we can only assign values to instance
+    // variables that are already defined in the class definition. For example, we cannot just
+    // type student1.grade = "A" and expect the grade variable (property) to appear out of nowhere.
+
     // By the way, String is not a primitive datatype. It is a class. A way to distinguish
     // between primitive and non-primitive datatypes is just looking at their name. If the
     // first letter of that datatype is typed as a  capital letter (while defining an object
